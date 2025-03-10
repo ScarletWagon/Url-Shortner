@@ -1,0 +1,77 @@
+/* Set a playful cat-themed background.
+   Place your cat background image (e.g., cat-bg.jpg) in the public folder,
+   then reference it here (adjust path if needed). */
+   body {
+    margin: 0;
+    padding: 0;
+    background: url('cat-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* a fun font for a cat theme */
+  }
+  
+  /* Add a semi-transparent container with a soft background for the app content */
+  .App {
+    background: rgba(255, 255, 255, 0.85);
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Animate the header with a subtle bounce */
+  h1 {
+    font-family: 'Pacifico', cursive; /* load from Google Fonts if desired */
+    color: #ff4081;
+    animation: bounce 2s infinite alternate;
+  }
+  
+  /* Basic styling for form elements */
+  form {
+    margin: 20px 0;
+  }
+  
+  input {
+    padding: 10px;
+    margin: 5px;
+    width: calc(100% - 30px);
+    border: 2px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #ff4081;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    background-color: #e73370;
+  }
+  
+  /* Animation keyframes */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+  }
+  
+  /* Style for the result block */
+  .result {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px dashed #ff4081;
+  }
+  
